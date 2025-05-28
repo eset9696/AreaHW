@@ -1,0 +1,12 @@
+﻿@page "{id:int}/{name?}"
+@model AreasHW.Areas.Admin.Pages.UserModel
+@{
+}
+
+<div>
+	<span>id - @Model.Id</span>
+	<span>name - @Model.Name</span>
+	<br />
+	<span>id - @RouteData.Values["id"]</span>
+	<span>name - @RouteData.Values["name"]</span>
+</div>
